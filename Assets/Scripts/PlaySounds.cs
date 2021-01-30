@@ -25,9 +25,10 @@ public class PlaySounds : MonoBehaviour
     }
     IEnumerator EventoChancla() 
     {
+        yield return new WaitForSeconds(3.5f);
         _audioSource.clip = audios[1];
         _audioSource.Play();
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1);
         _audioSource.clip = audios[0];
         _audioSource.Play();
     }
