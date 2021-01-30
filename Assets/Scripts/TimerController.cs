@@ -9,7 +9,9 @@ public class TimerController : MonoBehaviour
     GameObject timerBar;
     //public GameObject Timetxt;
     Timer timer;
-    
+    [SerializeField]
+    Image blur;
+
     bool event1=false;
 
     void Start()
@@ -18,7 +20,7 @@ public class TimerController : MonoBehaviour
         timer.Duration = 30;
         timer.Run();
         //Timetxt.SetActive(false);
-
+        blur.GetComponent<Image>().material.SetFloat("_Size", 0);
     }
 
     
@@ -35,7 +37,21 @@ public class TimerController : MonoBehaviour
             }
             timerBar.GetComponent<Image>().fillAmount = 1 - timer.elapsedSeconds / timer.totalSeconds;
             //print(timer.elapsedSeconds / timer.totalSeconds);
-            
+
+            if((int)timer.elapsedSeconds < 10)
+            {
+                blur.GetComponent<Image>().material.SetFloat("_Size", 0);
+            } 
+            else if((int)timer.elapsedSeconds < 20)
+            {
+                blur.GetComponent<Image>().material.SetFloat("_Size", 2);
+            }
+            else
+            {
+                blur.GetComponent<Image>().material.SetFloat("_Size", 4);
+            }
+
+
         }
         else
         {
