@@ -26,7 +26,7 @@ public class TimerController : MonoBehaviour
     {
         if (!timer.Finished)
         {
-            print(timer.elapsedSeconds);
+            //print(timer.elapsedSeconds);
             if (event1==true)
             {
                 event1 = false;

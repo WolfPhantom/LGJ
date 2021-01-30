@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler
+public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler, IPointerDownHandler
 {
     public static GameObject itemDragging;
 
@@ -12,7 +12,7 @@ public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginD
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("OnBeginDrag");
+        //Debug.Log("OnBeginDrag");
         itemDragging = gameObject;
 
         startParent = transform.parent;
@@ -21,7 +21,7 @@ public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginD
 
     public void OnDrag(PointerEventData eventData)
     {
-        Debug.Log("OnDrag");
+        //Debug.Log("OnDrag");
         Vector3 desirePosition = Input.mousePosition;
         desirePosition.z = 10.0f;
         transform.position = Camera.main.ScreenToWorldPoint(desirePosition); ;
@@ -29,12 +29,29 @@ public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginD
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("OnEndDrag");
+        //Debug.Log("OnEndDrag");
         itemDragging = null;
 
         if (transform.parent == dragParent)
         {
             transform.SetParent(startParent);
+        }
+    }
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        if (eventData.clickCount == 2)
+        {
+            if (gameObject.tag=="ObjectToFind")
+            {
+                Debug.Log("Encontrado");
+            }
+            else
+            {
+                Debug.Log("Tu mama");
+            }
+            Debug.Log("Double Click");
+            //Debug.Log(Input.mousePosition);
+            eventData.clickCount = 0;
         }
     }
 
