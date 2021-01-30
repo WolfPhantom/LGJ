@@ -5,6 +5,8 @@ using UnityEngine.EventSystems;
 
 public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler, IPointerDownHandler
 {
+    private TimerController timerController;
+    
     public static GameObject itemDragging;
 
     Transform startParent;
@@ -48,6 +50,7 @@ public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginD
             else
             {
                 Debug.Log("Tu mama");
+                timerController.LostTime();
             }
             Debug.Log("Double Click");
             //Debug.Log(Input.mousePosition);
@@ -59,6 +62,7 @@ public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginD
     void Start()
     {
         dragParent = GameObject.FindGameObjectWithTag("DragParent").transform;
+        timerController = GameObject.FindGameObjectWithTag("GameController").GetComponent<TimerController>();
     }
 
     // Update is called once per frame

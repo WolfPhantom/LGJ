@@ -45,7 +45,7 @@ public class TimerController : MonoBehaviour
     }
     public void LostTime() 
     {
-        timer.elapsedSeconds += 5;
+        timer.elapsedSeconds += 2;
     }
     public void ActivateEvent() 
     {
