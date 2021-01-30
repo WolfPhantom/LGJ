@@ -170,6 +170,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5688291536650761956, guid: c31979a253d5cee4990ca387f6623c9b, type: 3}
+      propertyPath: m_TagString
+      value: CajonBackground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c31979a253d5cee4990ca387f6623c9b, type: 3}
 --- !u!224 &1957616712933892135 stripped
