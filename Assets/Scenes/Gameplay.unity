@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 505404148}
   m_Layer: 5
   m_Name: Panel
-  m_TagString: Untagged
+  m_TagString: ObjectToFindPanel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,7 +154,6 @@ RectTransform:
   m_Children:
   - {fileID: 1076011556}
   - {fileID: 1469118297}
-  - {fileID: 1534477155}
   m_Father: {fileID: 1114789828}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1168,6 +1167,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!223 &1010441972 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 8916267077776585828, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+  m_PrefabInstance: {fileID: 2055928136844385704}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1076011555
 GameObject:
   m_ObjectHideFlags: 0
@@ -3327,7 +3331,39 @@ PrefabInstance:
       objectReference: {fileID: 519420031}
     - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
       propertyPath: CantObjects
-      value: 20
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: LeftTopCorner.x
+      value: -3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: LeftTopCorner.y
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: RightTopCorner.x
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: RightTopCorner.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: LeftBottomCorner.x
+      value: -3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: LeftBottomCorner.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: RightBottomCorner.x
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: RightBottomCorner.y
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
       propertyPath: movableObjects.Array.size
@@ -3349,6 +3385,10 @@ PrefabInstance:
       propertyPath: movableObjects.Array.data[3]
       value: 
       objectReference: {fileID: 962851654287940664, guid: 3d4d62b0290e0204abd166113b3b893c, type: 3}
+    - target: {fileID: 3869887678341678668, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4710629672695340003, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
       propertyPath: m_Name
       value: CajonTrigger (1)
@@ -3541,78 +3581,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1534477154
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1534477155}
-  - component: {fileID: 1534477157}
-  - component: {fileID: 1534477156}
-  m_Layer: 5
-  m_Name: Dildo
-  m_TagString: ObjectToFind
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1534477155
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1534477154}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 505404147}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000051498, y: -14.5}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1534477156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1534477154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 0}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &1534477157
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1534477154}
-  m_CullTransparentMesh: 0
 --- !u!1 &1801080748
 GameObject:
   m_ObjectHideFlags: 0
@@ -3658,6 +3626,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 1801080751}
+  objectsToFind:
+  - {fileID: 1539863721709221489, guid: f3bf01201a112174cbc9569d19f2b958, type: 3}
+  - {fileID: 7961160147309802880, guid: 45913c8449ccbac4699464e01cbd8194, type: 3}
+  - {fileID: 895674864228688243, guid: 9edcd5e57bbc0c64784edd9a804f8321, type: 3}
+  containers:
+  - {fileID: 1010441972}
+  - {fileID: 2145417610}
+  objectToFind: {fileID: 0}
 --- !u!114 &1801080751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3671,6 +3647,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerBar: {fileID: 610902268}
+--- !u!223 &2145417610 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 8916267077776585828, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+  m_PrefabInstance: {fileID: 1458986214}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2055928136844385704
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3688,7 +3669,23 @@ PrefabInstance:
       objectReference: {fileID: 519420031}
     - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
       propertyPath: CantObjects
-      value: 20
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: RightTopCorner.x
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: RightTopCorner.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: LeftBottomCorner.x
+      value: -3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: LeftBottomCorner.y
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
       propertyPath: movableObjects.Array.size

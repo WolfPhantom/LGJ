@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler, IPointerDownHandler
+public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler, IPointerClickHandler
 {
     private TimerController timerController;
     
@@ -39,7 +39,7 @@ public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginD
             transform.SetParent(startParent);
         }
     }
-    public void OnPointerDown(PointerEventData eventData)
+    public void OnPointerClick(PointerEventData eventData)
     {
         if (eventData.clickCount == 2)
         {

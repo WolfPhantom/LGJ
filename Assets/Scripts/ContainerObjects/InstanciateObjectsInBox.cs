@@ -9,12 +9,20 @@ public class InstanciateObjectsInBox : MonoBehaviour
 
     [SerializeField] private int CantObjects = 5;
 
+    [SerializeField] private Vector2 LeftBottomCorner;
+    [SerializeField] private Vector2 RightTopCorner;
+
     // Start is called before the first frame update
     void Start()
     {
         for (int i = 0; i < CantObjects; i++) {
             int index = Random.Range(0, movableObjects.Count);
-            Instantiate(movableObjects[index], transform.position, new Quaternion(0f, 0f, 0f, 0f), transform.GetChild(2));
+            Vector3 randomPosition = new Vector3(
+                Random.Range(LeftBottomCorner.x, RightTopCorner.x),
+                Random.Range(LeftBottomCorner.y, RightTopCorner.y),
+                transform.position.z);
+            Image img = Instantiate(movableObjects[index], randomPosition, new Quaternion(0f, 0f, 0f, 0f), transform.GetChild(2));
+            img.transform.rotation = new Quaternion(0f, 0f, Random.Range(-100, 100) / 100f, 1);
         }
     }
 
@@ -22,5 +30,15 @@ public class InstanciateObjectsInBox : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void InstantianteTargetObject(Image targetObject)
+    {
+        Vector3 randomPosition = new Vector3(
+                Random.Range(LeftBottomCorner.x, RightTopCorner.x),
+                Random.Range(LeftBottomCorner.y, RightTopCorner.y),
+                transform.position.z);
+        Image img = Instantiate(targetObject, randomPosition, new Quaternion(0f, 0f, 0f, 0f), transform.GetChild(2));
+        img.transform.rotation = new Quaternion(0f, 0f, Random.Range(-100, 100) / 100f, 1);
     }
 }
