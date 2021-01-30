@@ -773,12 +773,12 @@ MonoBehaviour:
 
     Alexander Trujillano
 
-    Sebastian
+    Sebastian Silva
 
-    Braulio Baldeon
+    Braulio
+    Baldeon
 
-    Jose
-    Ysique'
+    Jose Ysique'
 --- !u!222 &1393014984
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -907,6 +907,7 @@ GameObject:
   - component: {fileID: 1551551214}
   - component: {fileID: 1551551213}
   - component: {fileID: 1551551212}
+  - component: {fileID: 1551551216}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -997,6 +998,25 @@ RectTransform:
   m_AnchoredPosition: {x: -0.475, y: -2.205}
   m_SizeDelta: {x: 225.99799, y: 138.44943}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1551551216
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551551211}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fe654a35e3e9eb74d981318803c7819d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1581558848
 GameObject:
   m_ObjectHideFlags: 0
