@@ -74,15 +74,15 @@ public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginD
     // Start is called before the first frame update
     void Start()
     {
-        background = GameObject.FindGameObjectWithTag("CajonBackground");
+        //background = GameObject.FindGameObjectWithTag("CajonBackground");
         dragParent = GameObject.FindGameObjectWithTag("DragParent").transform;
 
 
-        halfColliderWidth = GetComponent<RectTransform>().rect.width / 2;
-        halfColliderHeight = GetComponent<RectTransform>().rect.height / 2;
+        //halfColliderWidth = GetComponent<RectTransform>().rect.width / 2;
+        //halfColliderHeight = GetComponent<RectTransform>().rect.height / 2;
 
-        halfColliderWidthB = background.GetComponent<RectTransform>().rect.width / 2;
-        halfColliderHeightB = background.GetComponent<RectTransform>().rect.height / 2;
+        //halfColliderWidthB = background.GetComponent<RectTransform>().rect.width / 2;
+        //halfColliderHeightB = background.GetComponent<RectTransform>().rect.height / 2;
 
 
 
