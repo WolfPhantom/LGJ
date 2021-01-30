@@ -17,13 +17,23 @@ public class GameplayController : MonoBehaviour
     List<GameObject> containersTrigers;
 
     private GameObject objectToFindPanel;
+    private Image objectToFindPanelEscena;
     public Image objectToFind;
-        
+
+
+    [SerializeField]
+    public GameObject _dialoguePanel;
+
+
+    public static bool GameIsPause = false;
     void Start()
     {
+        StartCoroutine(Pause());
         objectToFindPanel = GameObject.FindGameObjectWithTag("ObjectToFindPanel");
+        objectToFindPanelEscena = GameObject.FindGameObjectWithTag("ImagenDialogo").GetComponent<Image>();
         objectToFind = objectsToFind[Random.Range(0, objectsToFind.Count)];
         Instantiate(objectToFind, objectToFindPanel.transform);
+        objectToFindPanelEscena.sprite = objectToFind.sprite;
         containers[Random.Range(0, containers.Count)].GetComponent<InstanciateObjectsInBox>().InstantianteTargetObject(objectToFind);
     }
 
@@ -44,5 +54,14 @@ public class GameplayController : MonoBehaviour
             containersTrigers[i].GetComponent<AbrirCajon>().isOpen = condition;
         }
     }
-    
+    IEnumerator Pause()
+    {
+
+        yield return new WaitForSeconds(3f);
+        _dialoguePanel.SetActive(false);
+        timer.Initializeed();
+
+
+    }
+
 }

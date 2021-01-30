@@ -20,47 +20,54 @@ public class TimerController : MonoBehaviour
 
     void Start()
     {
-        timer = gameObject.AddComponent<Timer>();
-        timer.Duration = 30;
-        timer.Run();
+        ;
         //Timetxt.SetActive(false);
         blur.GetComponent<Image>().material.SetFloat("_Size", 0);
     }
+    public void Initializeed()
+    {
+        timer = gameObject.AddComponent<Timer>();
+        timer.Duration = 30;
+        timer.Run();
 
-    
+    }
+
     void Update()
     {
-        if (!timer.Finished)
+        if (timer != null)
         {
-            //print(timer.elapsedSeconds);
-            if (event1==true)
+            if (!timer.Finished)
             {
-                event1 = false;
-                LostTime();
-                
-            }
-            timerBar.GetComponent<Image>().fillAmount = 1 - timer.elapsedSeconds / timer.totalSeconds;
-            //print(timer.elapsedSeconds / timer.totalSeconds);
+                //print(timer.elapsedSeconds);
+                if (event1 == true)
+                {
+                    event1 = false;
+                    LostTime();
 
-            if((int)timer.elapsedSeconds < 10)
-            {
-                blur.GetComponent<Image>().material.SetFloat("_Size", 0);
-            } 
-            else if((int)timer.elapsedSeconds < 20)
-            {
-                blur.GetComponent<Image>().material.SetFloat("_Size", 2);
+                }
+                timerBar.GetComponent<Image>().fillAmount = 1 - timer.elapsedSeconds / timer.totalSeconds;
+                //print(timer.elapsedSeconds / timer.totalSeconds);
+
+                if ((int)timer.elapsedSeconds < 10)
+                {
+                    blur.GetComponent<Image>().material.SetFloat("_Size", 0);
+                }
+                else if ((int)timer.elapsedSeconds < 20)
+                {
+                    blur.GetComponent<Image>().material.SetFloat("_Size", 2);
+                }
+                else
+                {
+                    blur.GetComponent<Image>().material.SetFloat("_Size", 4);
+                }
+
+
             }
             else
             {
-                blur.GetComponent<Image>().material.SetFloat("_Size", 4);
+                //Timetxt.SetActive(true);
+                SceneManager.LoadScene("GameOver");
             }
-
-
-        }
-        else
-        {
-            //Timetxt.SetActive(true);
-            SceneManager.LoadScene("GameOver");
         }
     }
 
