@@ -295,7 +295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
       propertyPath: movableObjects.Array.size
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
       propertyPath: movableObjects.Array.data[0]
@@ -309,6 +309,18 @@ PrefabInstance:
       propertyPath: movableObjects.Array.data[2]
       value: 
       objectReference: {fileID: 7547527141939606161, guid: d143804adede8204a9202804b0255414, type: 3}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: movableObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 433816695042700569, guid: 979a101e52c224b4bb2a6772efd38a94, type: 3}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: movableObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 5816683161268465052, guid: 90e90267f42cdbb418a5128302fd9f59, type: 3}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: movableObjects.Array.data[5]
+      value: 
+      objectReference: {fileID: 9028994520278147510, guid: 72d97088b76376b4bbf6a56df198c9d0, type: 3}
     - target: {fileID: 4710629672695340003, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
       propertyPath: m_Name
       value: CajonTrigger (4)
@@ -848,7 +860,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
       propertyPath: movableObjects.Array.size
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
       propertyPath: movableObjects.Array.data[0]
@@ -862,6 +874,18 @@ PrefabInstance:
       propertyPath: movableObjects.Array.data[2]
       value: 
       objectReference: {fileID: 433816695042700569, guid: b65f68768c40d3e439c3caa7852545b7, type: 3}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: movableObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 5816683161268465052, guid: d8bc2263866960b47b0f98dc2941567d, type: 3}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: movableObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 433816695042700569, guid: df15f7fc32125154cba6f8b93b621728, type: 3}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: movableObjects.Array.data[5]
+      value: 
+      objectReference: {fileID: 433816695042700569, guid: 013fc63145d977a4aafd751210bac9e9, type: 3}
     - target: {fileID: 4710629672695340003, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
       propertyPath: m_Name
       value: CajonTrigger
@@ -3805,7 +3829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
       propertyPath: movableObjects.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
       propertyPath: movableObjects.Array.data[0]
@@ -3819,6 +3843,14 @@ PrefabInstance:
       propertyPath: movableObjects.Array.data[2]
       value: 
       objectReference: {fileID: 7547527141939606161, guid: d143804adede8204a9202804b0255414, type: 3}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: movableObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 433816695042700569, guid: 64ddc6efc2e1f3a48839d3c32ebff315, type: 3}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: movableObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 5816683161268465052, guid: 08b5a3dd49bff1e4faa0cfe7864c2ee5, type: 3}
     - target: {fileID: 4710629672695340003, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
       propertyPath: m_Name
       value: CajonTrigger (3)
@@ -3932,7 +3964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
       propertyPath: movableObjects.Array.size
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
       propertyPath: movableObjects.Array.data[0]
@@ -3946,6 +3978,18 @@ PrefabInstance:
       propertyPath: movableObjects.Array.data[2]
       value: 
       objectReference: {fileID: 7547527141939606161, guid: d143804adede8204a9202804b0255414, type: 3}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: movableObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 433816695042700569, guid: 8de91fb32302430489154c5226eed19e, type: 3}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: movableObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 433816695042700569, guid: f5212e5834ed1204e8c18d139380052b, type: 3}
+    - target: {fileID: 3471731874169300925, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
+      propertyPath: movableObjects.Array.data[5]
+      value: 
+      objectReference: {fileID: 272603666886238557, guid: 9354f5a050e793346aacd8f901ad6c08, type: 3}
     - target: {fileID: 4710629672695340003, guid: ab01aea1dd3f5e14497687e8a4e473ec, type: 3}
       propertyPath: m_Name
       value: CajonTrigger (2)

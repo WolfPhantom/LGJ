@@ -46,6 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerBar: {fileID: 0}
   blur: {fileID: 0}
+  fade: {fileID: 0}
+  nextLevel: GarageLevel
 --- !u!114 &2483943322341408635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,10 +63,19 @@ MonoBehaviour:
   timer: {fileID: 2483943322341408634}
   objectsToFind:
   - {fileID: 1539863721709221489, guid: f3bf01201a112174cbc9569d19f2b958, type: 3}
+  - {fileID: 895674864228688243, guid: d3e97ee2e47ddf44eb9335cf8a99ede0, type: 3}
+  - {fileID: 895674864228688243, guid: 9cebe6806d62cff48ba2439f8400e3b1, type: 3}
+  - {fileID: 895674864228688243, guid: c635a74ac96335b41be67816df14e6d7, type: 3}
   - {fileID: 7961160147309802880, guid: 45913c8449ccbac4699464e01cbd8194, type: 3}
+  - {fileID: 895674864228688243, guid: 65449cc09e784dc46ab74d415cc557f1, type: 3}
   - {fileID: 895674864228688243, guid: 9edcd5e57bbc0c64784edd9a804f8321, type: 3}
   containers:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  containersTrigers:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   objectToFind: {fileID: 0}
+  _dialoguePanel: {fileID: 0}
