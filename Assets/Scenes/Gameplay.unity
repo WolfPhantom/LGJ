@@ -4094,5 +4094,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2743286075417054922, guid: a01b216b1500922419bdce217ec22f70, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743286075417054922, guid: a01b216b1500922419bdce217ec22f70, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743286075417054922, guid: a01b216b1500922419bdce217ec22f70, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743286075417054922, guid: a01b216b1500922419bdce217ec22f70, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743286075417054922, guid: a01b216b1500922419bdce217ec22f70, type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 428dd386c488175419430d6f0210d75d, type: 3}
+    - target: {fileID: 2743286076662560284, guid: a01b216b1500922419bdce217ec22f70, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -73.8537
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743286076662560284, guid: a01b216b1500922419bdce217ec22f70, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -66.539795
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743286076662560284, guid: a01b216b1500922419bdce217ec22f70, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743286076662560284, guid: a01b216b1500922419bdce217ec22f70, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 32.886017
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a01b216b1500922419bdce217ec22f70, type: 3}

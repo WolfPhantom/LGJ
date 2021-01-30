@@ -61,11 +61,11 @@ public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginD
             {
                 //Time.timeScale = 0;
                 timerController.transition();
-                Debug.Log("GarageLevel");
+                //Debug.Log("GarageLevel");
             }
             else
             {
-                Debug.Log("Tu mama");
+                //Debug.Log("Tu mama");
                 timerController.LostTime();
             }
             Debug.Log("Double Click");
