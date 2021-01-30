@@ -7,7 +7,7 @@ public class TimerController : MonoBehaviour
 {
     [SerializeField]
     GameObject timerBar;
-    public GameObject Timetxt;
+    //public GameObject Timetxt;
     Timer timer;
     
     bool event1=false;
@@ -17,7 +17,7 @@ public class TimerController : MonoBehaviour
         timer = gameObject.AddComponent<Timer>();
         timer.Duration = 30;
         timer.Run();
-        Timetxt.SetActive(false);
+        //Timetxt.SetActive(false);
 
     }
 
@@ -39,7 +39,7 @@ public class TimerController : MonoBehaviour
         }
         else
         {
-            Timetxt.SetActive(true);
+            //Timetxt.SetActive(true);
             SceneManager.LoadScene("GameOver");
         }
     }
