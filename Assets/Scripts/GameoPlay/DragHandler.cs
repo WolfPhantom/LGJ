@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler, IPointerClickHandler
 {
@@ -58,7 +59,9 @@ public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginD
         {
             if (gameObject.tag=="ObjectToFind")
             {
-                Debug.Log("Encontrado");
+                //Time.timeScale = 0;
+                timerController.transition();
+                Debug.Log("GarageLevel");
             }
             else
             {
@@ -70,6 +73,8 @@ public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginD
             eventData.clickCount = 0;
         }
     }
+
+    
 
     // Start is called before the first frame update
     void Start()

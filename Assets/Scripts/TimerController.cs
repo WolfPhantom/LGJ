@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+
 public class TimerController : MonoBehaviour
 {
     [SerializeField]
@@ -11,6 +12,9 @@ public class TimerController : MonoBehaviour
     Timer timer;
     [SerializeField]
     Image blur;
+    [SerializeField]
+    Image fade;
+    public string nextLevel;
 
     bool event1=false;
 
@@ -59,13 +63,20 @@ public class TimerController : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
     }
+
     public void LostTime() 
     {
         timer.elapsedSeconds += 2;
     }
+
     public void ActivateEvent() 
     {
         event1 = true;
     }
     
+    public void transition()
+    {
+        fade.GetComponent<Transition>().LoadScene(nextLevel);
+    }
+
 }

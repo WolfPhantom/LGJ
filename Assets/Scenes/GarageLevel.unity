@@ -975,9 +975,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2139739820}
     - target: {fileID: 2483943322341408634, guid: 55518e786c3ae0e4b98238102492fe16, type: 3}
+      propertyPath: fade
+      value: 
+      objectReference: {fileID: 2139739821}
+    - target: {fileID: 2483943322341408634, guid: 55518e786c3ae0e4b98238102492fe16, type: 3}
       propertyPath: timerBar
       value: 
       objectReference: {fileID: 2139739819}
+    - target: {fileID: 2483943322341408634, guid: 55518e786c3ae0e4b98238102492fe16, type: 3}
+      propertyPath: nextLevel
+      value: Office
+      objectReference: {fileID: 0}
     - target: {fileID: 2483943322341408635, guid: 55518e786c3ae0e4b98238102492fe16, type: 3}
       propertyPath: containers.Array.size
       value: 5
@@ -4048,6 +4056,17 @@ GameObject:
 --- !u!114 &2139739820 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2743286075101618043, guid: a01b216b1500922419bdce217ec22f70, type: 3}
+  m_PrefabInstance: {fileID: 2139739818}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2139739821 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2743286076785372478, guid: a01b216b1500922419bdce217ec22f70, type: 3}
   m_PrefabInstance: {fileID: 2139739818}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
