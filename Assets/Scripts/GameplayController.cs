@@ -13,6 +13,8 @@ public class GameplayController : MonoBehaviour
     List<Image> objectsToFind;
     [SerializeField]
     List<Canvas> containers;
+    [SerializeField]
+    List<GameObject> containersTrigers;
 
     private GameObject objectToFindPanel;
     public Image objectToFind;
@@ -33,6 +35,14 @@ public class GameplayController : MonoBehaviour
             timer.ActivateEvent();
 
         }   
+    }
+
+    public void updateContainers(bool condition)
+    {
+        for (int i = 0; i < containersTrigers.Count; i++)
+        {
+            containersTrigers[i].GetComponent<AbrirCajon>().isOpen = condition;
+        }
     }
     
 }
