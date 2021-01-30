@@ -27,7 +27,7 @@ public class PlaySounds : MonoBehaviour
     {
         _audioSource.clip = audios[1];
         _audioSource.Play();
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
         _audioSource.clip = audios[0];
         _audioSource.Play();
     }
