@@ -19,6 +19,7 @@ public class GameplayController : MonoBehaviour
     private GameObject objectToFindPanel;
     private Image objectToFindPanelEscena;
     public Image objectToFind;
+    public AudioSource audio;
 
 
     [SerializeField]
@@ -56,7 +57,7 @@ public class GameplayController : MonoBehaviour
         yield return new WaitForSeconds(3f);
         _dialoguePanel.SetActive(false);
         timer.Initializeed();
-
+        audio.Play();
 
     }
 
