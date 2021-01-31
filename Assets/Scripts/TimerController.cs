@@ -54,11 +54,11 @@ public class TimerController : MonoBehaviour
                 }
                 else if ((int)timer.elapsedSeconds < 20)
                 {
-                    blur.GetComponent<Image>().material.SetFloat("_Size", 2);
+                    blur.GetComponent<Image>().material.SetFloat("_Size", 1);
                 }
                 else
                 {
-                    blur.GetComponent<Image>().material.SetFloat("_Size", 4);
+                    blur.GetComponent<Image>().material.SetFloat("_Size", 2);
                 }
 
 

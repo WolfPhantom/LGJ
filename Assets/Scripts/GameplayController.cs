@@ -38,14 +38,10 @@ public class GameplayController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown("space")) 
-        {
-            timer.ActivateEvent();
-
-        }   
-    }
+    //void Update()
+    //{
+        
+    //}
 
     public void updateContainers(bool condition)
     {
