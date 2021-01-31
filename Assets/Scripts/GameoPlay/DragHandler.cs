@@ -68,7 +68,7 @@ public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginD
                 //Debug.Log("Tu mama");
                 timerController.LostTime();
             }
-            Debug.Log("Double Click");
+            //Debug.Log("Double Click");
             //Debug.Log(Input.mousePosition);
             eventData.clickCount = 0;
         }

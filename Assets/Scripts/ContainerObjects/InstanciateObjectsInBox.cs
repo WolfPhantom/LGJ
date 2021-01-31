@@ -34,7 +34,7 @@ public class InstanciateObjectsInBox : MonoBehaviour
                 Random.Range(LeftBottomCorner.x, RightTopCorner.x),
                 Random.Range(LeftBottomCorner.y, RightTopCorner.y),
                 transform.position.z);
-            Debug.Log(randomPosition);
+            //Debug.Log(randomPosition);
             Image img = Instantiate(movableObjects[index], randomPosition, new Quaternion(0f, 0f, 0f, 0f), transform.GetChild(2));
             img.transform.rotation = new Quaternion(0f, 0f, Random.Range(-100, 100) / 100f, 1);
         }
