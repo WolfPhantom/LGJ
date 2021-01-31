@@ -454,6 +454,10 @@ PrefabInstance:
       value: EscenaVictoria
       objectReference: {fileID: 0}
     - target: {fileID: 7675666410379005273, guid: 2e34bd64e939f2d4899580f492d6901e, type: 3}
+      propertyPath: m_Text
+      value: Took you long enought!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675666410379005273, guid: 2e34bd64e939f2d4899580f492d6901e, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: 96fc338d96c3f83489e1762d1a8a83df, type: 3}
