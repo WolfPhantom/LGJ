@@ -453,6 +453,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: EscenaVictoria
       objectReference: {fileID: 0}
+    - target: {fileID: 7675666410379005273, guid: 2e34bd64e939f2d4899580f492d6901e, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 96fc338d96c3f83489e1762d1a8a83df, type: 3}
+    - target: {fileID: 7675666410379005273, guid: 2e34bd64e939f2d4899580f492d6901e, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 36
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e34bd64e939f2d4899580f492d6901e, type: 3}
 --- !u!1 &461240867
