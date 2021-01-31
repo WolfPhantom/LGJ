@@ -48,19 +48,22 @@ public class TimerController : MonoBehaviour
                 timerBar.GetComponent<Image>().fillAmount = 1 - timer.elapsedSeconds / timer.totalSeconds;
                 //print(timer.elapsedSeconds / timer.totalSeconds);
 
-                if ((int)timer.elapsedSeconds < 10)
+                //if ((int)timer.elapsedSeconds < 10)
+                //{
+                //    blur.GetComponent<Image>().material.SetFloat("_Size", 0);
+                //}
+                //else if ((int)timer.elapsedSeconds < 20)
+                //{
+                //    blur.GetComponent<Image>().material.SetFloat("_Size", 1);
+                //}
+                //else
+                //{
+                //    blur.GetComponent<Image>().material.SetFloat("_Size", 2);
+                //}
+                if (timer)
                 {
-                    blur.GetComponent<Image>().material.SetFloat("_Size", 0);
+                    blur.GetComponent<Image>().material.SetFloat("_Size", ((int)timer.elapsedSeconds / 10f));
                 }
-                else if ((int)timer.elapsedSeconds < 20)
-                {
-                    blur.GetComponent<Image>().material.SetFloat("_Size", 1);
-                }
-                else
-                {
-                    blur.GetComponent<Image>().material.SetFloat("_Size", 2);
-                }
-
 
             }
             else
