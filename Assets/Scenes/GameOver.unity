@@ -695,7 +695,7 @@ PrefabInstance:
       objectReference: {fileID: 4854397496335690116, guid: 1084a95a8e7b7244f820927fa0992e6e, type: 3}
     - target: {fileID: 7672865429568410043, guid: 68c9fb1c09c240747b2735591c0ac848, type: 3}
       propertyPath: m_Text
-      value: Ya te jodiste huevon!!!
+      value: Vas a ver que yo si lo encuentro!
       objectReference: {fileID: 0}
     - target: {fileID: 7672865429786863756, guid: 68c9fb1c09c240747b2735591c0ac848, type: 3}
       propertyPath: m_AnchoredPosition.x
